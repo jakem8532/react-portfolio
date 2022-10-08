@@ -41,29 +41,32 @@ function Contact() {
         <section className="contact-wrapper container">
             <h3 className="section-title">Contact Me</h3>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
+                <div className="input-container">
                     <label htmlFor="name">Name:</label>
                     <input 
                         type='name' 
-                        name="name" 
+                        name="name"
+                        placeholder="Enter your name"
                         defaultValue={name}
                         onBlur={handleChange}
                     />
                 </div>
-                <div>
+                <div className="input-container">
                     <label htmlFor="email">Email:</label>
                     <input 
                         type='email'
                         name="email"
+                        placeholder="Enter your email"
                         defaultValue={email}
                         onBlur={handleChange}
                     />
                 </div>
-                <div>
+                <div className="input-container">
                     <label htmlFor="message">Message:</label>
                     <textarea
                         name="message"
                         rows='5'
+                        placeholder="What is on your mind?"
                         defaultValue={message}
                         onBlur={handleChange}
                     />
@@ -73,7 +76,7 @@ function Contact() {
                         <p className="error-text">{error}</p>
                     </div>
                 )}
-                <button type="submit">submit</button>
+                <button type="submit" className="btn">submit</button>
             </form>
         </section>
     )

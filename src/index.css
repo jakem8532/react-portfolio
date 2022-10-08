@@ -38,6 +38,7 @@ body {
   margin: 0 auto;
 }
 
+
 /* Header */
 
 header {
@@ -204,4 +205,113 @@ nav {
   display: inline-block;
   width: 30%;
   margin-bottom: 1em;
+}
+
+
+/* Contact */
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  
+}
+
+label {
+  font-size: 1.2em;
+  margin: 0.5em;
+}
+
+input {
+  height: 3em;
+  padding: 1.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(0,0,0, 0.25);
+}
+
+textarea {
+  height: 6em;
+  padding: 1.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(0,0,0, 0.25);
+}
+
+.error-text {
+  margin: 1em;
+  color: red
+}
+
+.btn {
+  padding: 1em 2.5em;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 15px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  transition: 0.25s linear;
+  transform: scale(1);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Resume */
+
+.experience {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.experience div, .resume-bottom {
+  background-color: white;
+  padding: 1em;
+  width: 30%;
+  margin: 2em auto 0 auto;
+  box-shadow: 1px 1px 5px rgb(0,0,0,0.25);
+  border-radius: 15px;
+  line-height: 1.6;
+}
+
+.resume-header {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+.resume-item {
+  list-style: none;
+  margin-top: 0.5em;
+}
+
+
+/* Footer */
+
+footer {
+  height: 4em;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  color: var(--color-1);
+}
+
+footer a:hover {
+  color: var(--color-hover)
 }

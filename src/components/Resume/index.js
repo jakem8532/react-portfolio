@@ -7,7 +7,7 @@ function Resume() {
                 <h3 className="section-title">Resume</h3>
                 
 
-                <div className="d-flex">
+                <div className="experience">
                     <div>
                         <h4 className="resume-header">Front-end Experience</h4>
                             <ul className="resume-items">

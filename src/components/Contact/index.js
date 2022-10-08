@@ -6,7 +6,7 @@ function Contact() {
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' })
 
-    const [errorMessage, setErrorMessage] = useState('')
+    const [error, setError] = useState('')
     
     const { name, email, message } = formState
 
@@ -15,18 +15,18 @@ function Contact() {
             const isValid = validateEmail(e.target.value)
 
             if (!isValid) {
-                setErrorMessage("Please enter a correct email address!")
+                setError("Please enter a correct email address!")
             }else {
-                setErrorMessage('')
+                setError('')
             }
         }else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} field cannot be blank`)
+                setError(`${e.target.name} field cannot be blank`)
             }else {
-                setErrorMessage('')
+                setError('')
             }
 
-            if (!errorMessage) {
+            if (!error) {
                 setFormState({ ...formState, [e.target.name]: e.target.value})
             }
         }
@@ -58,6 +58,7 @@ function Contact() {
                         defaultValue={email}
                         onBlur={handleChange}
                     />
+                </div>
                 <div>
                     <label htmlFor="message">Message:</label>
                     <textarea
@@ -67,7 +68,12 @@ function Contact() {
                         onBlur={handleChange}
                     />
                 </div>
-                </div>
+                {error && (
+                    <div>
+                        <p className="error-text">{error}</p>
+                    </div>
+                )}
+                <button type="submit">submit</button>
             </form>
         </section>
     )

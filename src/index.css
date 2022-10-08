@@ -4,12 +4,58 @@
 
 body {
   margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
 }
 
 .d-flex {
   display: flex;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .ml-2 {
   margin-left: 2em;
+}
+
+header {
+  background-color: #14213D;
+  color: #E5E5E5;
+  text-align: center;
+  margin: 0;
+}
+
+/* Navigation */
+
+nav {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.nav-title {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-title:hover {
+  color: rgb(24, 210, 207)
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2em;
+}
+
+.about-me-photo {
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
 }

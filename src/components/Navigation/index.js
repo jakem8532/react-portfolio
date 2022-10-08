@@ -10,7 +10,7 @@ function Navigation(props) {
 
     return (
         <nav>
-            <ul className='nav-container'>
+            <ul className='nav-container d-flex space-between'>
                 {navOptions.map(option => (
                     <li 
                         className={`nav-title ${currentNavOption === option && 'navActive'}`}

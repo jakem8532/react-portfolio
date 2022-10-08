@@ -2,21 +2,21 @@ import React, {useState} from 'react'
 import './App.css';
 
 import Navigation from './components/Navigation';
-import Projects from './components/Projects';
+import Portfolio from './components/Portfolio';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 function App() {
 
-  const [navOptions] = useState(['About Me', 'Projects', 'Contact', 'Resume'])
+  const [navOptions] = useState(['About Me', 'Portfolio', 'Contact', 'Resume'])
 
   const [currentNavOption, setNavOption] = useState(navOptions[0])
 
   function navDisplay() {
     switch (currentNavOption) {
-      case 'Projects':
-        return <Projects></Projects>
+      case 'Portfolio':
+        return <Portfolio></Portfolio>
       case 'Contact':
         return <Contact></Contact>
       case 'Resume':
@@ -36,7 +36,7 @@ function App() {
           setNavOption={setNavOption}
         ></Navigation>
       </header>
-      <main className='main'>{navDisplay}</main>
+      <main className='main'>{navDisplay()}</main>
       <footer>
         <a href='https://github.com/jakem8532' target='_blank' rel='noreferrer'>
           Github

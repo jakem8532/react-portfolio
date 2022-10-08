@@ -29,12 +29,14 @@ function App() {
   return (
     <div className='body'>
       <header>
-        <h2 className='site-title'>Jake Mendez</h2>
-        <Navigation
-          navOptions={navOptions}
-          currentNavOption={currentNavOption}
-          setNavOption={setNavOption}
-        ></Navigation>
+        <div className='page-max-width'>
+          <h1 className='site-title'>Jake Mendez</h1>
+          <Navigation
+            navOptions={navOptions}
+            currentNavOption={currentNavOption}
+            setNavOption={setNavOption}
+          ></Navigation>
+        </div>
       </header>
       <main className='main'>{navDisplay()}</main>
       <footer>

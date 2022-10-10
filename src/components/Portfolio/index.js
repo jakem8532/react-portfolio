@@ -24,6 +24,13 @@ function Portfolio() {
             repo: 'https://github.com/jakem8532/deep-thoughts',
             live: 'https://glacial-crag-91199.herokuapp.com/'
         },
+        {
+            name: 'Carolina Convo',
+            description: 'A chat application where anyone in the Carolinas can connect',
+            languages: 'Express, MongoDB, CSS, React, Apollo',
+            repo: 'https://github.com/jakem8532/carolina-convo',
+            live: 'https://sleepy-retreat-23011.herokuapp.com/'
+        }
     ]     
 
     return (
